@@ -9,9 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "@react-google-maps/api": "latest",
+    "@reduxjs/toolkit": "latest",
+    "@types/nodemailer": "latest",
+    "ai": "latest",
+    "axios": "latest",
+    "clsx": "latest",
+    "eslint-config-next": "latest",
+    "nodemailer": "latest",
+    "openai-edge": "latest",
+    "framer-motion": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "next": "14.2.17",
+    "react-hook-form": "latest",
+    "react-icons": "latest",
+    "react-map-gl": "latest",
+    "react-redux": "latest",
+    "sharp": "latest",
+    "stripe": "latest"
   },
   "devDependencies": {
     "typescript": "^5",

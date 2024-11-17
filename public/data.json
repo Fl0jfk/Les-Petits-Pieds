@@ -1,0 +1,34 @@
+{
+    "profile":
+    {
+        "firstname": "",
+        "lastname": "",
+        "telephone": ""
+    },
+    "crèches":[
+        {
+            "id":1,
+            "name":"Les Petits Pieds",
+            "img":"https://lespetitspieds.s3.eu-west-3.amazonaws.com/Les+Petits+Pieds+Groupe/Les+Petits+Pieds/jardinlespetitspieds.jpg",
+            "shortDescription":"",
+            "description":"",
+            "link":"/lespetitspieds"
+        },
+        {
+            "id":2,
+            "name":"Les Petits Pandas",
+            "img":"https://lespetitspieds.s3.eu-west-3.amazonaws.com/Les+Petits+Pieds+Groupe/Les+Petits+Pandas/maisonlespetitspandas.jpg",
+            "shortDescription":"",
+            "description":"",
+            "link":"/lespetitspandas"
+        },
+        {
+            "id":3,
+            "name":"Les Petits Chats",
+            "img":"https://lespetitspieds.s3.eu-west-3.amazonaws.com/Les+Petits+Pieds+Groupe/Les+Petits+Chats/maisonslespetitschats.jpg",
+            "shortDescription":"",
+            "description":"",
+            "link":"/lespetitschats"
+        }
+    ]
+}
