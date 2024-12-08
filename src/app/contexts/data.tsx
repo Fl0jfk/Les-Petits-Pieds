@@ -6,16 +6,19 @@ type Crèches = {
   img: string;
   location:string;
   mapLink:string;
+  address: string;
   shortDescription: string;
   description: string;
   link: string;
+  disponibility:boolean;
+  team:any;
 };
 
 type Team = {
   id:number;
   firstname:string;
   lastname:string;
-  profession:string;
+  graduate:string;
   pp:string;
 }
 

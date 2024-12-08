@@ -9,7 +9,6 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
     const [clickOnLink, setClickOnLink] = useState(menuOpened);
     const menuOpen = (clickOnLink ? "bg-white" : "hidden");
     const [servicesAppear, setServicesAppear] = useState(false);
-    const servicesVisible = (servicesAppear ? "" : "hidden");
     const restOfMenu = (!servicesAppear ? "" : "hidden");
     const data = useData()
     const handleLinkClick = () => {
@@ -67,11 +66,12 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                     </motion.nav>
                 }
             </AnimatePresence>
-            <nav  className={`flex xl:absolute lg:absolute xl:left-[35%] lg:left-[30%] gap-6 sm:hidden md:hidden z-[9] text-3xl`}>
-                <Link href="/" aria-label="Lien vers la page d'accueil">Accueil</Link>
-                <Link href="/boutique" aria-label="Lien vers la page boutique">Boutique</Link>
-                <Link href="/notreequipe" aria-label="Lien vers la page Notre Equipe">Notre Équipe</Link>
-                <Link href="/contact" aria-label="Lien vers la page contact">Contact</Link>
+            <nav  className={`flex gap-6 sm:hidden md:hidden z-[9] text-3xl w-full mx-auto`}>
+                <Link className='hover:scale-110' href="/" aria-label="Lien vers la page d'accueil">Accueil</Link>
+                <Link className='hover:scale-110' href="/lespetitspieds" aria-label="Lien vers la page Les Petits Pieds">Pieds</Link>
+                <Link className='hover:scale-110' href="/lespetitspandas" aria-label="Lien vers la page Les Petits Pandas">Pandas</Link>
+                <Link className='hover:scale-110' href="/lespetitschats" aria-label="Lien vers la page Les Petits Chats">Chats</Link>
+                <Link className='hover:scale-110' href="/contact" aria-label="Lien vers la page contact">Contact</Link>
             </nav>
         </>
     )

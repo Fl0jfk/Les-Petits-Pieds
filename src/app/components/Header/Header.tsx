@@ -33,7 +33,7 @@ export default function Header(){
                         </Link>
                     }
                 </div>
-                <div className='w-8/12 flex justify-end items-center sm:mt-[-5px] h-full'>
+                <div className='w-8/12 lg:w-9/12 xl:w-8/12 flex justify-end items-center sm:mt-[-5px] h-full'>
                     <Navbar menuOpened={menuOpened} onLinkClick={handleLinkClick}/>
                     <div className='flex justify-end w-[40] items-center h-full' onClick={() => handleClick()}>
                         <CrossButton menuOpened={menuOpened}/>

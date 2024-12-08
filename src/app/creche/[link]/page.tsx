@@ -2,6 +2,7 @@
 
 import { useData } from "@/app/contexts/data";
 import { useEffect, useState } from "react";
+import PersonalList from "@/app/components/List/PersonalList";
 
 type Creche = {
     id: number;
@@ -11,6 +12,8 @@ type Creche = {
     description: string;
     link: string;
     mapLink:string;
+    address:string;
+    team:any; 
 };
 
 interface CrèchesProps {
@@ -33,8 +36,18 @@ export default function CrèchesPages({ params }: CrèchesProps) {
     return (
         <main className="md:pt-[10vh] sm:pt-[10vh] flex flex-col justify-center items-center max-w-[1200px] mx-auto gap-4">
             <h1 className="text-black text-4xl">{crèche.name}</h1>
-            <div className="w-full h-[500px] px-4">
+            <div className="w-full h-[600px] px-4 flex flex-col items-center gap-4 mt-4">
+                <h2 className="text-3xl">La crèche</h2>
+                <p>Photos de la crèche</p>
+            </div>
+            <div className="w-full px-4 flex flex-col items-center gap-4">
+                <h2 className="text-3xl">Notre équipe</h2>
+                <PersonalList team={crèche.team}/>
+            </div>
+            <div className="w-full h-[600px] px-4 flex flex-col items-center gap-4">
+                <h2 className="text-3xl">Nous trouver</h2>
                 <iframe src={crèche.mapLink} className="w-full h-full rounded-2xl" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen/>
+                <p>Nous sommes situés au {crèche.address}.</p>
             </div>
         </main>
     );
