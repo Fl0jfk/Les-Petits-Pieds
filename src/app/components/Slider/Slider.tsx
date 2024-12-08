@@ -26,7 +26,7 @@ export default function Slider({ props }: SliderProps) {
   return (
     <div ref={containerRef} className="flex items-center overflow-x-scroll snap-x snap-mandatory cursor-grab select-none h-[650px]" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseMove={handleMouseMove}>
       {props.map((crèche) => {
-        return <Slide name={crèche.name} key={crèche.id} img={crèche.img} shortDescription={crèche.shortDescription} description={crèche.description} link={crèche.link}/>
+        return <Slide name={crèche.name} key={crèche.id} img={crèche.img} shortDescription={crèche.shortDescription} description={crèche.description} link={crèche.link} location={crèche.location}/>
       })}
     </div>
   );

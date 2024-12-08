@@ -4,6 +4,8 @@ type Crèches = {
   id: number;
   name: string;
   img: string;
+  location:string;
+  mapLink:string;
   shortDescription: string;
   description: string;
   link: string;
