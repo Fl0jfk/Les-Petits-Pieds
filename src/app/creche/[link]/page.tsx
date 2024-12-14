@@ -44,6 +44,10 @@ export default function CrèchesPages({ params }: CrèchesProps) {
                 <h2 className="text-3xl">Notre équipe</h2>
                 <PersonalList team={crèche.team}/>
             </div>
+            <div className="w-full px-4 flex flex-col items-center gap-4">
+                <h2 className="text-3xl">Les activités de la semaine</h2>
+                A raccorder aux différentes pages Facebook
+            </div>
             <div className="w-full h-[600px] px-4 flex flex-col items-center gap-4">
                 <h2 className="text-3xl">Nous trouver</h2>
                 <iframe src={crèche.mapLink} className="w-full h-full rounded-2xl" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen/>

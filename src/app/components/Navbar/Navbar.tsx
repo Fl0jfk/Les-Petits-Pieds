@@ -39,9 +39,9 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
                         </div>
                         <div className={`flex flex-col gap-6 justify-center items-center w-full ${restOfMenu}`}>
                             <Link className='hover:scale-110' href="/" onClick={handleLinkClick} aria-label="Lien vers la page d'accueil">Accueil</Link>
-                            <Link className='hover:scale-110' href="/lespetitspieds" onClick={handleLinkClick} aria-label="Lien vers la page Les Petits Pieds">Les Petits Pieds</Link>
-                            <Link className='hover:scale-110' href="/lespetitspandas" onClick={handleLinkClick} aria-label="Lien vers la page Les Petits Pandas">Les Petits Pandas</Link>
-                            <Link className='hover:scale-110' href="/lespetitschats" onClick={handleLinkClick} aria-label="Lien vers la page Les Petits Chats">Les Petits Chats</Link>
+                            <Link className='hover:scale-110' href="/creche/lespetitspieds" onClick={handleLinkClick} aria-label="Lien vers la page Les Petits Pieds">Les Petits Pieds</Link>
+                            <Link className='hover:scale-110' href="/creche/lespetitspandas" onClick={handleLinkClick} aria-label="Lien vers la page Les Petits Pandas">Les Petits Pandas</Link>
+                            <Link className='hover:scale-110' href="/creche/lespetitschats" onClick={handleLinkClick} aria-label="Lien vers la page Les Petits Chats">Les Petits Chats</Link>
                             <Link className='hover:scale-110' href="/contact" onClick={handleLinkClick} aria-label="Lien vers la page contact">Contact</Link>
                         </div>
                         <div className='flex gap-4'>
@@ -68,9 +68,9 @@ export default function Navbar({menuOpened, onLinkClick} :NavbarProps ){
             </AnimatePresence>
             <nav  className={`flex gap-6 sm:hidden md:hidden z-[9] text-3xl w-full mx-auto`}>
                 <Link className='hover:scale-110' href="/" aria-label="Lien vers la page d'accueil">Accueil</Link>
-                <Link className='hover:scale-110' href="/lespetitspieds" aria-label="Lien vers la page Les Petits Pieds">Pieds</Link>
-                <Link className='hover:scale-110' href="/lespetitspandas" aria-label="Lien vers la page Les Petits Pandas">Pandas</Link>
-                <Link className='hover:scale-110' href="/lespetitschats" aria-label="Lien vers la page Les Petits Chats">Chats</Link>
+                <Link className='hover:scale-110' href="/creche/lespetitspieds" aria-label="Lien vers la page Les Petits Pieds">Pieds</Link>
+                <Link className='hover:scale-110' href="/creche/lespetitspandas" aria-label="Lien vers la page Les Petits Pandas">Pandas</Link>
+                <Link className='hover:scale-110' href="/creche/lespetitschats" aria-label="Lien vers la page Les Petits Chats">Chats</Link>
                 <Link className='hover:scale-110' href="/contact" aria-label="Lien vers la page contact">Contact</Link>
             </nav>
         </>
